@@ -30,7 +30,8 @@ class FileManager {
   add = async (obj) => {
     const list = await this.read()
     const nextId = this.getNextId(list)
-    obj.id = nextId
+    obj.id = nextId,
+    obj.price =
 
     list.push(obj)
 
